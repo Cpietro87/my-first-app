@@ -1,5 +1,5 @@
 import { sculptureList } from '../assets/data';
-
+import { useState } from "react";
 /* Aquí hay un componente que renderiza una imagen de una escultura.
     1-Al hacer clic en el botón «Siguiente», debe mostrar la siguiente escultura,
     2-Al llegar a la ultima imagen arreglar el error
@@ -7,13 +7,16 @@ import { sculptureList } from '../assets/data';
  */
 
 export default function Gallery() {
-  let index = 0;
+
+  let [index, setIndex] = useState(0);
+  
 
   function handleClick() {
-    index = index + 1;
+    setIndex(index + 1);
   }
 
   let sculpture = sculptureList[index];
+
   return (
     <>
       <button onClick={handleClick}>

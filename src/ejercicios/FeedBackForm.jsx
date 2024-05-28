@@ -5,7 +5,6 @@ export default function FeedbackForm() {
   if (isSent) {
     return <h1>¡Gracias!</h1>;
   } else {
-    // eslint-disable-next-line
     const [message, setMessage] = useState('');
     return (
       <form onSubmit={e => {

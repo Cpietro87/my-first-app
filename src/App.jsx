@@ -1,12 +1,15 @@
 import './App.css'
-import Saludo from './components/Saludo'
+import Form from './ejercicios/Fomulario';
+import  Gallery  from "./ejercicios/Gallery";
+import FeedbackForm from './ejercicios/FeedBackForm';
+
+
 
 function App() {
 
   return (
     <>
-      <Saludo name= "Pedro"/>
-
+    <Gallery/>
     </>
   )
 }
