@@ -9,18 +9,37 @@ import { useState } from "react";
 export default function Gallery() {
 
   let [index, setIndex] = useState(0);
-  
+  const [showMore, setShowMore] = useState(false)
+  let sculpture = sculptureList[index];
 
-  function handleClick() {
+  let anterior = index > 0
+  let sigue = index < sculptureList.length -1
+
+
+  function handleSiguiente() {
     setIndex(index + 1);
   }
 
-  let sculpture = sculptureList[index];
+  
+  function handleAnterior() {
+    setIndex(index - 1);
+  }
+
+  const handleShowMore = () => {
+    setShowMore(!showMore)
+  }
 
   return (
     <>
-      <button onClick={handleClick}>
+      <button 
+      onClick={handleSiguiente}
+      disabled={!anterior}>
         Siguiente
+      </button>
+      <button onClick={handleAnterior}
+      disabled={!sigue}
+      >
+        Anterior
       </button>
       <h2>
         <i>{sculpture.name} </i> 
@@ -29,13 +48,12 @@ export default function Gallery() {
       <h3>  
         ({index + 1} de {sculptureList.length})
       </h3>
+      <button onClick={handleShowMore}> {showMore ? 'Ocultar' : 'Mostrar'} Detalles</button>
+      {showMore && <p>{sculpture.description}</p>}
       <img 
         src={sculpture.url} 
         alt={sculpture.alt}
       />
-      <p>
-        {sculpture.description}
-      </p>
     </>
   );
 }

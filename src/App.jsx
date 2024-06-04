@@ -1,7 +1,5 @@
 import './App.css'
-import Form from './ejercicios/Fomulario';
-import  Gallery  from "./ejercicios/Gallery";
-import FeedbackForm from './ejercicios/FeedBackForm';
+import Gallery from './ejercicios/Gallery'
 
 
 
@@ -9,7 +7,7 @@ function App() {
 
   return (
     <>
-    <Gallery/>
+      <Gallery/>
     </>
   )
 }
