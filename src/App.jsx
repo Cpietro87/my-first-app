@@ -1,13 +1,12 @@
 import './App.css'
-import Gallery from './ejercicios/Gallery'
-
+import ListaTarea from "./components/ListaTarea";
 
 
 function App() {
 
   return (
     <>
-      <Gallery/>
+      <ListaTarea/>
     </>
   )
 }
