@@ -9,6 +9,8 @@ const Navigation = () => {
           <li className="navbar-item"><a href="/about" className="navbar-link">About</a></li>
           <li className="navbar-item"><a href="/dashboard" className="navbar-link">Dashboard</a></li>
           <li className="navbar-item"><a href="/formulario" className="navbar-link">Formulario</a></li>
+          <li className="navbar-item"><a href="/grafico" className="navbar-link">Diagrama de Barra</a></li>
+
         </ul>
       </nav>
     );

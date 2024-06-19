@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Dashboard from './pages/Dashboard';
 import Formulario  from "./components/Formulario";
+import MyBarChart from './components/MyBarChart';
+
 
 function App() {
 
@@ -18,6 +20,7 @@ function App() {
         <Route path='about' element={<About/>}/>
         <Route path='dashboard' element={<Dashboard/>}/>
         <Route path='formulario' element={<Formulario/>}/>
+        <Route path='grafico' element={<MyBarChart/>}/>
       </Routes>
     </div>
     </BrowserRouter>

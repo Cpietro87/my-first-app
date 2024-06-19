@@ -14,3 +14,12 @@ npm install react-router-dom
 
 react-hook-form
 npm install react-hook-form
+
+diagramas con ChartJs
+https://www.chartjs.org/
+npm install chart.js react-chartjs-2
+
+loader
+https://www.davidhu.io/react-spinners/storybook/?path=/docs/barloader--main
+npm install react-spinners
+
